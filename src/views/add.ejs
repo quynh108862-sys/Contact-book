@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Thêm Liên Hệ</title>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen p-6">
+    <div class="bg-white shadow-2xl rounded-3xl p-10 w-full max-w-md border border-slate-100">
+        <h2 class="text-3xl font-black text-indigo-600 mb-8 text-center tracking-tight">
+            ➕ THÊM LIÊN HỆ
+        </h2>
+        
+        <form action="/add" method="POST" class="space-y-6">
+            <div>
+                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase ml-1">Họ tên</label>
+                <input type="text" name="name" required placeholder="Nguyễn Văn A" 
+                       class="w-full px-5 py-3 bg-slate-50 border-2 border-transparent rounded-2xl outline-none focus:border-indigo-500 focus:bg-white transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase ml-1">Số điện thoại</label>
+                <input type="text" name="phone" required placeholder="0901..." 
+                       class="w-full px-5 py-3 bg-slate-50 border-2 border-transparent rounded-2xl outline-none focus:border-indigo-500 focus:bg-white transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase ml-1">Email</label>
+                <input type="email" name="email" required placeholder="a@gmail.com" 
+                       class="w-full px-5 py-3 bg-slate-50 border-2 border-transparent rounded-2xl outline-none focus:border-indigo-500 focus:bg-white transition-all">
+            </div>
+            
+            <div class="flex gap-4 pt-4">
+                <button type="submit" class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-2xl shadow-lg shadow-indigo-200 transition-all active:scale-95">
+                    LƯU NGAY
+                </button>
+                <a href="/" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-500 font-bold py-4 rounded-2xl text-center transition-all">
+                    HỦY
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
